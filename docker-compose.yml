@@ -1,0 +1,31 @@
+# Copyright 2020, Duke Institute for Health Innovation (DIHI), Duke University School of Medicine, Durham NC. All Rights Reserved.
+
+# Based upon:
+# https://github.com/sladkovm/docker-flask-gunicorn-nginx
+
+version: '3'
+
+services:
+
+  server:
+    container_name: chatbot-server
+    restart: unless-stopped
+    build: ./server
+    ports:
+      - "9999:9999"
+    environment:
+      - FLASK_ENV=prod
+      - SSL_CERT=/etc/ssl/certificate.pem
+      - SSL_KEY=/etc/ssl/key.pem
+    user: app
+    command: bash -c "pipenv run bootssl"
+
+  client:
+    container_name: chatbot-client
+    restart: unless-stopped
+    build: ./chatbot-moderator
+    ports:
+      - "8080:80"
+      - "443:443"
+    depends_on:
+      - server

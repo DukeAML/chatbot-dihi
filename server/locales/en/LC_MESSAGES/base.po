@@ -1,0 +1,29 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: jedrek.wosik@duke.edu\n"
+"POT-Creation-Date: 2020-02-06 15:00:41.702350\n"
+"PO-Revision-Date: 2020-02-06 13:20\n"
+"Last-Translator: Jedrek Wosik <jedrek.wosik@duke.edu>\n"
+"Language-Team: Jedrek Wosik <jedrek.wosik@duke.edu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+# ==============================================================
+#
+#  ALL msgid KEYS MUST BE <= 48 CHARACTERS DUE TO CONSTRAINTS ON
+#  DATABASE VALUES. msgid KEYS SHOULD ONLY INCLUDE CHARACTERS IN
+#  THE ASCII DATASET.
+#
+# ==============================================================
+
+
+# DO NOT REMOVE OR ALTER THIS TEST MSGID.
+msgid "test-msgid-do-not-delete"
+msgstr "hello world"
+# DO NOT REMOVE OR ALTER THIS TEST MSGID.
+
+
