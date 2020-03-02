@@ -137,7 +137,7 @@ export default {
             this.checkEmergency = true;
             this.prevMessage = response.data.message;
             this.messageForm.message = response.data.message + '\n \n Your message appears to need urgent attention.'+
-            ' Please call the Nurse Triage Line at (919) - 999 - 9999 or call 9-1-1. If you believe you can wait for up'+
+            ' Please call the Nurse Triage Line at (919) - 999 - 5000 or call 9-1-1. If you believe you can wait for up'+
             ' to 3 days to receive a response, please continue.';
           } else {
             this.resultMessage = 'Sent!';
