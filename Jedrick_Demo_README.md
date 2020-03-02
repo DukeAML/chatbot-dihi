@@ -14,9 +14,7 @@ On the terminal on the left, type the following commands, with an enter between 
 
 ```pipenv install```
 
-```pipenv shell```
-
-```pipenv run flask run --port 5000 ```
+```pipenv run flask run --port 9999 ```
 
 Should be good there.
 ## Step 4 - Start Frontend
@@ -34,3 +32,17 @@ Should be good there.
 Head to http://10.197.109.81:8080/, unless there is a different address listed after the last command in the right (direction) terminal.
 
 Now all should be good.
+
+Critical Commands:
+'having chest pain', 
+'drooping of my face',                               
+'unable to walk',
+'short of breath at rest',
+'tight chest pain',
+'chest pain and nausea', 
+'having chest pains that have gotten increasingly worse',
+'chest pains that have gotten worse',
+'chest pain that has gotten worse', 
+'chest pain has gotten worse',
+'passing out nonstop',
+'passing out again'
