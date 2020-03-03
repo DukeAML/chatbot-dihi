@@ -1,6 +1,6 @@
 <template>
   <div class="chat container">
-    <h1 style="font-size: 32pt">Welcome to the Duke Health Safety Chat</h1>
+    <h1 style="font-size: 32pt">Welcome to the Duke Patient Portal - Optimized for Safety</h1>
     
     <br>
     
@@ -9,7 +9,7 @@
         <b-form @submit="onSubmit" @reset="onReset" class="w-100">
         <b-form-group
           id="fieldset-1"
-          description="Please do not submit emergencies, this is only monitored every 1-3 days."
+          description="Please do not submit emergencies, responses may take up to 3 days."
           label="What can we help you with?"
           label-for="textarea"
         >
@@ -28,7 +28,7 @@
       
         <b-button v-if="!checkEmergency" type="submit" variant="outline-primary" size="lg" style="margin: 30px; font-size: 18pt;" >Send</b-button>
       </b-form>
-      <b-button v-if="checkEmergency" v-on:click="cancelMessage" variant="primary" size="lg" style="margin: 30px; font-size: 18pt;">Cancel Message, I will call 9-1-1.</b-button>
+      <b-button v-if="checkEmergency" v-on:click="cancelMessage" variant="primary" size="lg" style="margin: 30px; font-size: 18pt;">Cancel Message, I will call Nurse or 9-1-1.</b-button>
       
       <b-button v-if="checkEmergency" v-on:click="onConfirm" variant="outline-primary" size="lg" style="margin: 30px; font-size: 18pt;">I confirm not an emergency, send message.</b-button>
       </div>
@@ -137,7 +137,7 @@ export default {
             this.checkEmergency = true;
             this.prevMessage = response.data.message;
             this.messageForm.message = response.data.message + '\n \n Your message appears to need urgent attention.'+
-            ' Please call the Nurse Triage Line at (919) - 999 - 5000 or call 9-1-1. If you believe you can wait for up'+
+            ' Please call the Nurse Triage Line at (919) - 999 - 9999 or call 9-1-1. If you believe you can wait for up'+
             ' to 3 days to receive a response, please continue.';
           } else {
             this.resultMessage = 'Sent!';
