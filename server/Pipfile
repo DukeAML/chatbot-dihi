@@ -9,7 +9,7 @@ polib = "*"
 
 [packages]
 flask = "~=1.1.1"
-flask-cors = "~=3.0.8"
+flask-cors = "~=3.0.9"
 gunicorn = "~=20.0.4"
 
 [requires]
